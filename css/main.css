@@ -1,5 +1,6 @@
 @import 'container.css';
 @import 'banner.css';
+@import 'responsive.css';
 
 /* remove any default margin and padding */
 body {
@@ -7,4 +8,9 @@ body {
   padding: 0;
   background-image: url('../textures/ground_03.png');
   overflow: hidden;
+}
+
+img.logo {
+  width: 80px;
+  height: auto;
 }
