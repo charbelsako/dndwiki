@@ -1,13 +1,13 @@
 @import 'container.css';
 @import 'banner.css';
 @import 'responsive.css';
-
+@import 'card.css';
 /* remove any default margin and padding */
 body {
   margin: 0;
   padding: 0;
   background-image: url('../textures/ground_03.png');
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 img.logo {

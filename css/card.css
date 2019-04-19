@@ -1,0 +1,20 @@
+.card {
+  width: 200px;
+  height: 200px;
+  background: red;
+  padding: 6px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.card > p {
+  position: relative;
+  top: 100%;
+  margin-top: -20px;
+}
+/* add media queries for this element */
+@media only screen and (max-width: 550px) {
+  .card {
+    width: 80%;
+  }
+}

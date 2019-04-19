@@ -8,3 +8,10 @@ div.container {
   margin-bottom: 5px;
   background-color: firebrick;
 }
+/* we'll decide later if these 2 classes should be merged or not */
+div.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
