@@ -1,4 +1,5 @@
 STATIC BANNER ON ALL PAGES
+Banner has previous page in image format and search button outside of the landing page
 
 Landing page:
     4x4 grid of images
