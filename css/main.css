@@ -2,6 +2,7 @@
 @import 'banner.css';
 @import 'responsive.css';
 @import 'card.css';
+@import 'footer.css';
 /* remove any default margin and padding */
 body {
   margin: 0;
