@@ -1,10 +1,16 @@
 .card {
     margin: 10px;
     border: 5px ridge #00AA11;
+    border-radius: 70px;
+    /*For images with alpha channels. 
+     *Usually i'd have to set it individually in GIMP but this saves me the hassle.
+     *It's not strictly needed here since i did set it for all landing images*/
+    background-image: url('../img/textures/old_paper.png');
     /*Text alignment via flexbox*/
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow:hidden;
 }
 
 /*Load in the badass font*/
@@ -23,14 +29,19 @@
     font-weight: bold;
     color: #F0A00F;
     text-shadow: 3px 3px #000000;
-    /*fade-in animation*/
     opacity: 0;
     transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
 }
-.card > p:hover{
+.card:hover > p{
     opacity: 1;
+}
+
+.image {
+    transition: all 1s ease;
+    
+}
+.card:hover > img {
+    transform: scale(1.2);
 }
 
 /* add media queries for this element */

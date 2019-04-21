@@ -1,5 +1,5 @@
 div.container {
-    max-width: 1100px;
+    max-width: 1000px;
     width: 80%; 
     height: auto;
     padding: 5px;
@@ -7,7 +7,7 @@ div.container {
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 220, 0.2);
 }
 /* we'll decide later if these 2 classes should be merged or not */
 div.mainContainer {
