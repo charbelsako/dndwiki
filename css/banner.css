@@ -1,17 +1,15 @@
 header {
-  width: 100%;
-  padding: 10px;
-  font-size: 24px;
-  background-color: darkgoldenrod;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    font-size: 24px;
+    background-image: linear-gradient(#506038, #7b7f6d);
+    opacity: 0.75;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-
-/* this block styles all the divs in the banner */
 header > div {
-  width: 30%;
-  margin: 10px;
-  text-align: center;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
 }

@@ -5,13 +5,13 @@
 @import 'footer.css';
 /* remove any default margin and padding */
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url('../textures/ground_03.png');
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('../textures/ground_03.png');
+    overflow-x: hidden;
 }
 
 img.logo {
-  width: 80px;
-  height: auto;
+    width: 80px;
+    height: auto;
 }

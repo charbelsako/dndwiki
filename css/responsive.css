@@ -1,27 +1,27 @@
 @media only screen and (max-width: 900px) {
-  .onlargeonly {
-    display: none;
-  }
+    .onlargeonly {
+        display: none;
+    }
 }
 
 /* displays on small screens only */
 /*
 @media only screen and (max-width: 300px) {
-  .onsmallonly {
-    display: block;
-  }
+.onsmallonly {
+display: block;
+}
 }
 
 @media only screen and (min-width: 301px) {
-  .onsmallonly {
-    display: none;
-  }
+.onsmallonly {
+display: none;
 }
-*/
+}
+ */
 
-/* @media only screen and (max-width: 900px) {
-  .onlargeonly {
+    /* @media only screen and (max-width: 900px) {
+    .onlargeonly {
     display: none;
-  }
-}
-*/
+    }
+    }
+     */

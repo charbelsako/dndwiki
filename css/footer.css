@@ -1,10 +1,10 @@
 footer {
-  text-align: center;
-  height: 50px;
-  background-color: darkgoldenrod;
+    text-align: center;
+    height: 50px;
+    background-color: darkgoldenrod;
 }
 
 footer > p {
-  position: relative;
-  top: 25%;
+    position: relative;
+    top: 25%;
 }
