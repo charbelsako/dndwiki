@@ -1,9 +1,0 @@
-[Charbel]
-Get banner set up
-Set background texture
-Set up container
-
-[Richard]
-Gather images
-Format images
-Organize images
