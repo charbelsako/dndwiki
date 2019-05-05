@@ -1,7 +1,5 @@
 async function loadData(path) {
   const result = await fetch(path)
   const data = await result.json()
-  console.log(data)
+  return data.monster
 }
-
-loadData('../data/fluff-bestiary-mm.json')
