@@ -9,7 +9,7 @@
         <script src="../js/parse-data.js"></script>
         <script>
             window.addEventListener('load', async () => {
-                const data = await loadData('../data/fluff-bestiary-mm.json')
+                const data = await loadData('../data/bestiary-mm.json')
                 // iterate over the data and display them
                 for (let i = 0; i < data.length; i++) {
                     // generate the cards
@@ -27,15 +27,15 @@
                 // don't forget to remove this line
                 if (i > 10) break
             }
-            })
+})
         </script>
         <style>
-        .card {
-            margin: 0;
-            border-radius: 0;
-            border: 0;
-            outline: 5px ridge orange;
-        }
+.card {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    outline: 5px ridge orange;
+}
         </style>
     </head>
     <body>
