@@ -10,8 +10,23 @@
     <script>
       window.addEventListener('load', async () => {
         const data = await loadData('../data/fluff-bestiary-mm.json')
-        console.log(data[0])
         // iterate over the data and display them
+        for (let i = 0; i < data.length; i++) {
+          // generate the cards
+          const card = `
+            <div class="card">
+              <img class="image" width="300" height="300" src="${
+                data[i].images
+                  ? `../img/${data[i].images[0].href.path}`
+                  : '../img/landing_page/beastiary.png'
+              }" alt="${data[i].name}" />
+              <p>${data[i].name}</p>
+            </div>
+          `
+          mainContainer.innerHTML += card
+          // don't forget to remove this line
+          if (i > 10) break
+        }
       })
     </script>
     <style>
@@ -29,31 +44,6 @@
         <img src="../dnd_logo.png" alt="logo" class="logo" />
       </a>
     </header>
-    <div class="container mainContainer">
-      <div class="card">
-        <img class="image" src="../img/landing_page/beastiary.png" alt="beastiary.png" />
-        <p>Beastiary</p>
-      </div>
-      <div class="card">
-        <img class="image" src="../img/landing_page/beastiary.png" alt="beastiary.png" />
-        <p>Beastiary</p>
-      </div>
-      <div class="card">
-        <img class="image" src="../img/landing_page/beastiary.png" alt="beastiary.png" />
-        <p>Beastiary</p>
-      </div>
-      <div class="card">
-        <img class="image" src="../img/landing_page/beastiary.png" alt="beastiary.png" />
-        <p>Beastiary</p>
-      </div>
-      <div class="card">
-        <img class="image" src="../img/landing_page/beastiary.png" alt="beastiary.png" />
-        <p>Beastiary</p>
-      </div>
-      <div class="card">
-        <img class="image" src="../img/landing_page/beastiary.png" alt="beastiary.png" />
-        <p>Beastiary</p>
-      </div>
-    </div>
+    <div class="container mainContainer" id="mainContainer"></div>
   </body>
 </html>
