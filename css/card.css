@@ -20,12 +20,14 @@
 }
 
 .card > p {
+    text-align: center;
+    max-width: 300px;
     pointer-events: none;
     position: absolute;
     font-size: 35px;
     font-family: 'Sindbad';
     font-weight: bold;
-    color: #f0a00f;
+    color: #F0A00F;
     text-shadow: 3px 3px #000000;
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
