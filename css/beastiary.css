@@ -1,0 +1,18 @@
+div.container {
+    max-width: 1250px;
+}
+.card {
+    margin: 2px;
+    border-radius: 0;
+    border: 3px solid #00AA11;
+    overflow: hidden;
+}
+#pagination {
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+}
+#pagination > button {
+    /* font-variant-numeric: tabular-nums; */
+    width: 30px;
+}
