@@ -1,0 +1,15 @@
+.card {
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  outline: 5px ridge orange;
+}
+#pagination {
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+}
+#pagination > button {
+  /* font-variant-numeric: tabular-nums; */
+  width: 30px;
+}

@@ -1,6 +1,4 @@
-// node script
 const data = require('./../data/bestiary-mm.json').monster
-
 const fs = require('fs')
 // data has been loaded
 
@@ -12,7 +10,9 @@ function preprocess(data) {
     try {
       fs.readFileSync(`../img/bestiary/MM/${data[i].name}.jpg`)
       data[i].image = `../img/bestiary/MM/${data[i].name}.jpg`
-    } catch (err) {}
+    } catch (err) {
+      console.log(err)
+    }
   }
   newData = JSON.stringify(data)
   // fs.writeFileSync('../data/new-bestiary-mm.json', newData)

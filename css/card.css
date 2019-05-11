@@ -1,52 +1,52 @@
 .card {
-    margin: 10px;
-    border: 5px ridge #00aa11;
-    border-radius: 70px;
-    /*For images with alpha channels.
+  margin: 10px;
+  border: 5px ridge #00aa11;
+  border-radius: 70px;
+  /*For images with alpha channels.
      *Usually i'd have to set it individually in GIMP but this saves me the hassle.
      *It's not strictly needed here since i did set it for all landing images*/
-    background-image: url('../img/textures/old_paper.png');
-    /*Text alignment via flexbox*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  background-image: url('../img/textures/old_paper.png');
+  /*Text alignment via flexbox*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 /*Load in the badass font*/
 @font-face {
-    font-family: 'Sindbad';
-    src: url('fonts/JMH_Sindbad.eot') format('eot'), url('fonts/JMH_Sindbad.woff') format('woff'),
+  font-family: 'Sindbad';
+  src: url('fonts/JMH_Sindbad.eot') format('eot'), url('fonts/JMH_Sindbad.woff') format('woff'),
     url('fonts/JMH_Sindbad.ttf') format('truetype'), url('fonts/JMH_Sindbad.svg') format('svg');
 }
 .card > p {
-    /*font formatting*/
-    position: absolute;
-    font-size: 35px;
-    font-family: 'Sindbad';
-    font-weight: bold;
-    color: #f0a00f;
-    text-shadow: 3px 3px #000000;
-    opacity: 0;
-    transition: opacity 0.25s ease-in-out;
+  /*font formatting*/
+  position: absolute;
+  font-size: 35px;
+  font-family: 'Sindbad';
+  font-weight: bold;
+  color: #f0a00f;
+  text-shadow: 3px 3px #000000;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  /* the next line fixes the names so that they appear centered on chrome. */
+  /* but it ruins how they appear in firefox */
+  /* margin-block-start: 0; */
 }
 .card:hover > p {
-    opacity: 1;
+  opacity: 1;
 }
 
 img {
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .card:hover > img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* add media queries for this element */
 @media only screen and (max-width: 550px) {
-    .card {
-        width: 80%;
-    }
-    .card > p {
-        opacity: 1;
-    }
+  .card > p {
+    opacity: 1;
+  }
 }
