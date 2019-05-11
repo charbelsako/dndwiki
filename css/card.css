@@ -20,6 +20,7 @@
 }
 
 .card > p {
+    pointer-events: none;
     position: absolute;
     font-size: 35px;
     font-family: 'Sindbad';
