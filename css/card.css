@@ -1,7 +1,8 @@
 .card {
     margin: 10px;
-    border: 5px ridge #00aa11;
-    border-radius: 70px;
+    box-shadow: 10px 10px 10px #000000;
+    border: 5px solid #A2A2A2;
+    border-radius: 30px;
     background-image: url('../img/textures/old_paper.png');
     display: flex;
     align-items: center;
