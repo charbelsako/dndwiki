@@ -45,8 +45,8 @@ window.addEventListener('load', async () => {
             <div class="card">
               <img class="image" width="300" height="300" src="${
                 data[i].image
-                  ? `../img/bestiary/MM/${data[i].name}.jpg`
-                      : '../img/landing_page/beastiary.png'
+                  ? `../img/beastiary/MM/${data[i].name}.jpg`
+                      : `../img/beastiary/MM_tokens/${data[i].name}.png`
               }" alt="${data[i].name}" />
               <p>${data[i].name}</p>
             </div>
