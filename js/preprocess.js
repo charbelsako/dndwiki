@@ -6,8 +6,8 @@ function preprocess(data) {
     let i = 0;
     for (let i = 0; i < data.length; i++) {
         try {
-            fs.readFileSync(`../img/bestiary/MM/${data[i].name}.jpg`);
-            data[i].image = `../img/bestiary/MM/${data[i].name}.jpg`;
+            fs.readFileSync(`../img/bestiary/MM_tokens/${data[i].name}.png`);
+            data[i].image = `../img/bestiary/MM_tokens/${data[i].name}.png`;
         } catch (err) {
             console.log(err);
         }

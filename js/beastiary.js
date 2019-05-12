@@ -43,11 +43,7 @@ window.addEventListener('load', async () => {
             // generate the cards
             const card = `
             <div class="card">
-              <img class="image" width="300" height="300" src="${
-                data[i].image
-                  ? `../img/beastiary/MM/${data[i].name}.jpg`
-                      : `../img/beastiary/MM_tokens/${data[i].name}.png`
-              }" alt="${data[i].name}" />
+              <img class="image" width="300" height="300" src="../img/beastiary/MM_tokens/${data[i].name}.png"/>
               <p>${data[i].name}</p>
             </div>
           `;
