@@ -1,45 +1,61 @@
 window.addEventListener('load', async () => {
     const data = await loadData('../data/new-bestiary-mm.json');
-    let len = 20; // amount of images on one page
-    let maxPages = Math.ceil(data.length / len);
-    let start = 0; // where to start
-    renderPage(start);
+    var start = 0; // where to start
+    var end;
+    for (var i = start; i < data.length; i++){
+        if (data[i].name[0] != data[start].name[0]){
+            break;
+        }
+        if (data[i].name[0] == data[start].name[0]){
+            end = i;
+        }
+    }
+    render_page(start, end);
 
-    function movePage() {
-        start = (+this.innerHTML - 1) * len;
-        renderPage(start);
-        generateButtons();
+    function move_page() {
+        var end;
+        var start;
+        for (var i = 0; i < data.length; i++){
+            if (data[i].name[0] == this.innerHTML){
+                start = i;
+                break;
+            }
+        }
+        for (var i = start; i < data.length; i++){
+            if (data[i].name[0] != data[start].name[0]){
+                break;
+            }
+            if (data[i].name[0] == data[start].name[0]){
+                end = i;
+            }
+        }
+        render_page(start, end);
+        generate_buttons();
     }
 
-    function generateButtons() {
-        clearPage(pagination);
+    function generate_buttons() {
+        var alphabet = "ABCDEFGHIGKLMNOPQRSTUVWXYZ".split('');
+        clear_page(pagination);
         // pagination
-        let numButtons = maxPages / len;
-        let startIndex = start / len - 3;
-        if (startIndex <= 0) {
-            startIndex = 1;
-        }
-        endIndex = startIndex + 7 > maxPages ? maxPages : startIndex + 7;
-        for (let i = startIndex; i <= endIndex; i++) {
+        for (var i = 0; i < 26; i++) {
             // pagination buttons
             button = document.createElement('button');
-            button.innerHTML = i;
-            button.onclick = movePage;
+            button.innerHTML = alphabet[i];
+            button.onclick = move_page;
             pagination.append(button);
         }
     }
-    generateButtons()
+    generate_buttons();
 
-    function clearPage(element) {
+    function clear_page(element) {
         while (element.firstChild) {
             element.removeChild(element.firstChild);
         }
     }
 
-    function renderPage(start) {
-        clearPage(mainContainer);
-        end = start + len > data.length ? data.length : start + len;
-        for (let i = start; i < end; i++) {
+    function render_page(start, end) {
+        clear_page(mainContainer);
+        for (let i = start; i <= end; i++) {
             // generate the cards
             const card = `
             <div class="card">
