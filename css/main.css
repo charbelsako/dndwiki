@@ -3,15 +3,18 @@
 @import 'responsive.css';
 @import 'card.css';
 @import 'footer.css';
-/* remove any default margin and padding */
+html {
+    min-height: 100%;
+    margin: 0;
+}
 body {
+    min-height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('../img/textures/ground_03.png');
-    overflow-x: hidden;
+    background-image: radial-gradient(ellipse, #333333, #FFFFFF);
 }
 
 img.logo {
-    width: 80px;
+    width: 100px;
     height: auto;
 }
