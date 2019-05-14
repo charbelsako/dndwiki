@@ -4,5 +4,5 @@ const spellPHB = require('./../data/spells-phb.json').spell
 const spellXGE = require('./../data/spells-xge.json').spell
 
 fullData = spellPHB.concat(spellXGE)
-console.log(fullData)
+console.log(fullData.length)
 fs.writeFileSync('../data/full-spells.json', JSON.stringify(fullData))
