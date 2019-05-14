@@ -4,3 +4,5 @@ screenshots/
 img/beastiary/
 js/node_modules
 presentation/
+data/spells-xge.json
+data/spells-phb.json
