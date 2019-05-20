@@ -1,0 +1,27 @@
+#mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    background-color: #FFFFFF;
+}
+
+#modal_content {
+    min-width: 400px;
+    max-width: 1000px;
+}
+
+.seperator {
+    background-color: #CB88A2;
+    min-height: 5px;
+}

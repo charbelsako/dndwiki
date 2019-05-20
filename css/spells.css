@@ -1,27 +1,27 @@
 table {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  border-spacing: 0px;
-  border: 0px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0px;
+    border: 0px solid black;
 }
 
 td {
-  padding: 4px 20px;
+    padding: 4px 20px;
 
-  margin: 0px;
+    margin: 0px;
 }
 
 thead tr th {
-  /* border: 1px solid black; */
-  width: 14%;
+    /* border: 1px solid black; */
+    width: 14%;
 }
 
 tbody > tr:nth-child(odd) {
-  background: #888888;
+    background: #888888;
 }
 
 tbody > tr:hover {
-  background: #707070;
-  cursor: pointer;
+    background: #707070;
+    cursor: pointer;
 }
