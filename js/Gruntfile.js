@@ -13,11 +13,31 @@ module.exports = function(grunt) {
           '../css/main.min.css': ['<%= concat.dist.dest %>']
         }
       }
+    },
+    cwebp: {
+      dynamic: {
+        options: {
+          q: 50
+        },
+        files: [
+          {
+            expand: true,
+            cwd: '../img/landing_page/',
+            src: ['*.{png,jpg,gif}'],
+            dest: './../img/dist/'
+          }
+        ]
+      }
     }
   })
 
   grunt.loadNpmTasks('grunt-contrib-concat')
   grunt.loadNpmTasks('grunt-contrib-cssmin')
+  grunt.loadNpmTasks('grunt-cwebp')
 
-  grunt.registerTask('default', ['concat', 'cssmin'])
+  grunt.registerTask('concatCss', 'concat')
+  grunt.registerTask('minCss', 'cssmin')
+  grunt.registerTask('minImgs', 'cwebp')
+
+  grunt.registerTask('default', ['concatCss', 'minCss', 'minImgs'])
 }
