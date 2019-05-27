@@ -25,3 +25,7 @@
     background-color: #CB88A2;
     min-height: 5px;
 }
+
+td:nth-child(7) {
+    text-align: center;
+}

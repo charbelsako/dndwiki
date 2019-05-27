@@ -12,9 +12,11 @@ body {
     margin: 0;
     padding: 0;
     background-image: radial-gradient(ellipse, #FFFFFF, #333333);
+    cursor: url(../img/pointer.cur), pointer;
 }
 
 img.logo {
     width: 100px;
     height: auto;
+    cursor: url(../img/select.cur), pointer;
 }
