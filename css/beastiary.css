@@ -1,11 +1,12 @@
-@import modal.css
+@import 'modal.css';
+
 div.container {
     max-width: 1250px;
 }
 .card {
     margin: 6px;
     border-radius: 5px;
-    background-image: url("../img/paper.png");
+    background-image: url('../img/paper.png');
     overflow: hidden;
 }
 #pagination {
@@ -32,4 +33,20 @@ div.container {
 #pagination > button:hover {
     background-color: #00B5FF;
     border-color: #FFFFFF;
+    box-shadow: 0px 10px 10px #222222;
+    background-color: #d2d2d2;
+    border: 2px solid #a2a2a2;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 6px;
+    transition: background-color 0.1s linear;
+    transition: border-color 0.1s linear;
+}
+#pagination > button:hover {
+    background-color: #00b5ff;
+    border-color: #ffffff;
+    cursor: pointer;
 }

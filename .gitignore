@@ -6,3 +6,5 @@ js/node_modules
 presentation/
 data/spells-xge.json
 data/spells-phb.json
+img/landing_page
+img/dist/
