@@ -41,7 +41,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (start >= 5) {
       begin = start - 4
     }
-    for (let i = begin; i <= start + 5; i++) {
+    let end = start + 5
+    if (end > data.length / 10) {
+      end = Math.ceil(data.length / 10)
+    }
+    for (let i = begin; i <= end; i++) {
       let btn = document.createElement('button')
       btn.innerHTML = `${i}`
       btn.onclick = function() {
