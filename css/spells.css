@@ -1,3 +1,6 @@
+* {
+  cursor: url(../img/select.cur), pointer;
+}
 table {
   width: 80%;
   margin-left: auto;
