@@ -74,8 +74,8 @@ window.addEventListener('load', async () => {
         }
 
         var anchors = document.getElementsByClassName("card_anchor");
-        for (let i = 0; i< anchors.length; i++){
-            let anchor = anchors[i];
+        for (let i = start; i< end; i++){
+            let anchor = anchors[i - start];
             anchor.onclick = function(){
                 //Add the base element
                 let mask = `
@@ -341,7 +341,6 @@ window.addEventListener('load', async () => {
                         modal_content.innerHTML += element; 
                     }
                 }
-                console.log(data[i]);
                 return false;
             }
         }
