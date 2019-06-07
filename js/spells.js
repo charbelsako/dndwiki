@@ -11,29 +11,29 @@ document.addEventListener('DOMContentLoaded', async () => {
         for (let i = start; i < end; i++) {
             let spell = data[i]
             spellContainer.innerHTML += `
-            <td>
-              ${spell.name}
-            </td>
-            <td>
-              ${spell.level}
-            </td>
-            <td>
-              ${` ${spell.time[0].number} ${spell.time[0].unit}`}
-            </td>
-            <td>
-              ${spell.school}
-            </td>
-            <td class="onlargeonly">
-             ${`  ${
-               spell.range.distance
-                 ? spell.range.distance.amount
+                <td>
+                  ${spell.name}
+                </td>
+                <td>
+                  ${spell.level}
+                </td>
+                <td>
+                  ${` ${spell.time[0].number} ${spell.time[0].unit}`}
+                </td>
+                <td>
+                  ${spell.school}
+                </td>
+                <td class="onlargeonly">
+                 ${`  ${
+                   spell.range.distance
                      ? spell.range.distance.amount
-                     : ''
-                     : ''
-             } ${spell.range.distance.type ? spell.range.distance.type : ''}`}
-            </td>
+                         ? spell.range.distance.amount
+                         : ''
+                         : ''
+                 } ${spell.range.distance.type ? spell.range.distance.type : ''}`}
+                </td>
 
-              `
+                  `
         }
         start = start / 10 + 1
         generatePagination(start)

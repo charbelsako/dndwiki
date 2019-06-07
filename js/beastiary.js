@@ -74,7 +74,7 @@ window.addEventListener('load', async () => {
         }
 
         var anchors = document.getElementsByClassName("card_anchor");
-        for (let i = start; i< end; i++){
+        for (let i = start; i <= end; i++){
             let anchor = anchors[i - start];
             anchor.onclick = function(){
                 //Add the base element
