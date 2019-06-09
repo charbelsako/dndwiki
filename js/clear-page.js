@@ -1,5 +1,5 @@
-function clear_page(element) {
-    while (element.firstChild) {
-        element.removeChild(element.firstChild)
-    }
+function clearPage(element) {
+  while (element.firstChild) {
+    element.removeChild(element.firstChild)
+  }
 }
