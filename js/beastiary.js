@@ -108,7 +108,7 @@ window.addEventListener('load', async () => {
     document.onkeydown = function(evt) {
       let mask = document.querySelector('#mask')
       evt = evt || window.event
-      if (evt.keyCode == 27) {
+      if (evt.keyCode == 27 && mask != null) {
         mask.remove()
       }
     }
