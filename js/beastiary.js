@@ -16,6 +16,7 @@ window.addEventListener('load', async () => {
 
   function movePage() {
     filteredData = data.filter(row => row.name[0] == this.innerHTML)
+    debugger
     renderPage(filteredData)
   }
 
@@ -26,7 +27,7 @@ window.addEventListener('load', async () => {
 
       const card = `
             <div class="card">
-                <a class="card_anchor" href="#" data-name=${displayData[i].name}>
+                <a class="card_anchor" href="#" data-name="${displayData[i].name}">
                     <img class="image" width="300" height="300" src="../img/beastiary/MM_tokens/${
                       displayData[i].name
                     }.png"/>
@@ -68,16 +69,18 @@ window.addEventListener('load', async () => {
       A: 'Any Alignment'
     }
 
-    let type = monster.type
+    let type
     if (typeof monster.type == 'object') {
       type = monster.type.type
+    } else {
+      type = monster.type
     }
     let size = size_mappings[monster.size]
     let alignment = `${alignment_mappings[monster.alignment[0]]} ${
       alignment_mappings[monster.alignment[1]]
     }
     `
-    let armorClass = typeof monster.ac[0] == 'object' ? monster.ac[0].ac[0] : monster.ac[0]
+    let armorClass = typeof monster.ac[0] == 'object' ? monster.ac[0].ac : monster.ac[0]
     let mask = `
     <div id="mask">
         <div id="modal">
@@ -114,6 +117,7 @@ window.addEventListener('load', async () => {
     }
     console.log(mask)
     document.body.innerHTML += mask
+    injectFunctionToAnchors()
   }
 
   generateButtons()
